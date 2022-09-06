@@ -1,56 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Josefin+Sans:wght@300&display=swap');
 
 .App {
-  background: #23252C;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* background: #2a2c32; */
+}
+
+.App-desc {
+  padding: 11rem;
+  padding-top: 1rem;
+  padding-bottom: 0;
+  font-family: 'Inter', sans-serif;
   display: flex;
+  flex-direction: column;
 }
 
 .intro-section {
-
-  font-family: 'Inter', sans-serif;
-  margin-bottom: 53rem;
-
+  background: #23252c;
 }
 
-.profile-pic {
-  position: absolute;
-  right: 31rem;
-  top: 20px;
-}
-
-.intro {
-  position: absolute;
-  top: 21rem;
-  right: 36rem;
+.intro-desc {
   text-align: center;
-  /* background: #1A1B21; */
-}
-
-
-.name {
-  margin-bottom: 0;
-  font-size: 25px;
   color: #fff;
+
 }
 
-.profession {
-  font-size: 13px;
-  margin-top: 0;
-  color: #F3BF99;
+.social-icon {
+
+  background: #161619;
+  border-radius: 0px 0px 10px 10px;
+  padding: 14px 53px
 }
 
-.website {
-  font-size: 11px;
-  margin-top: 0;
-  color: #fff;
+.social-icon img {
+  padding: 0 12px;
 }
 
-.btn {
+.btn-social {
   display: flex;
-  gap: 8px;
-  position: absolute;
-  top: 29rem;
-  right: 33rem;
+  column-gap: 5px;
+  justify-content: center;
 }
 
 .btn-email {
@@ -78,15 +67,6 @@
   cursor: pointer;
 }
 
-.summary {
-  position: absolute;
-  top: 33rem;
-  right: 2rem;
-  padding: 0 30em;
-  font-family: 'Inter', sans-serif;
-  color: #fff;
-}
-
 .summary-title,
 .interests-title {
   font-size: 16px;
@@ -99,15 +79,18 @@
   line-height: 150%
 }
 
-.social-icon {
-  position: absolute;
-  right: 30rem;
-  top: 48rem;
-  background: #161619;
-  border-radius: 0px 0px 10px 10px;
-  padding: 14px 53px
+/* .social-icon>img {
+  padding: 0 1rem;
+} */
+
+.website {
+  font-size: 11px;
+  margin-top: 0;
+  color: #fff;
 }
 
-.social-icon>img {
-  padding: 0 1rem;
+.summary {
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  padding-left: 6px;
 }
